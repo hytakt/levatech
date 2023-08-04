@@ -11,6 +11,10 @@
 
 
     </head>
+    <x-app-layout>
+        <x-slot name="header">
+            Show
+        </x-slot>
     <body class='antialiased'>
         <h1 class='title'>
             {{$post->title }}
@@ -26,7 +30,8 @@
             <a href="/posts/{{ $post->id }}/edit">edit</a>
         </div>
         <div class='footer'>
-            <a href='/posts'>戻る</a>
+            <a href='/'>戻る</a>
         </div>
     </body>
+    </x-app-layout>
 </html>
