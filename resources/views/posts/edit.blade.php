@@ -8,6 +8,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         
     </head>
+    <x-app-layout>
+        <x-slot name="header">
+            Edit
+        </x-slot>
     <body>
         <h1 class="title">編集画面</h1>
         <div class="content">
@@ -26,4 +30,5 @@
             </form>
         </div>
     </body>
+    </x-app-layout>
 </html>
